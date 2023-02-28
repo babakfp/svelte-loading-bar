@@ -4,7 +4,6 @@
 	"version": "0.0.1",
 	"license": "MIT",
 	"repository": "github:babakfp/svelte-loading-bar",
-	"homepage": "https://babakfp.ir/docs/svelte-loading-bar",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",

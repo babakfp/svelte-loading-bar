@@ -21,6 +21,9 @@
 		/* prettier-ignore */
 		background-color: var(--loadingbar-background-color, rgb(255 255 255 / 40%));
 	}
+	.loadingbar-train {
+		height: 100%;
+	}
 	.loadingbar-train::before,
 	.loadingbar-train::after {
 		content: "";

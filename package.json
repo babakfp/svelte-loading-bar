@@ -19,8 +19,8 @@
 	},
 	"exports": {
 		".": {
-			"types": "./dist/LoadingBar.svelte.d.ts",
-			"svelte": "./dist/LoadingBar.svelte"
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
 		}
 	},
 	"files": [
@@ -49,7 +49,7 @@
 		"typescript": "4.9.5",
 		"vite": "4.1.4"
 	},
-	"types": "./dist/LoadingBar.svelte.d.ts",
-	"svelte": "./dist/LoadingBar.svelte",
+	"types": "./dist/index.d.ts",
+	"svelte": "./dist/index.js",
 	"type": "module"
 }

@@ -46,32 +46,16 @@
 			cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 		animation-delay: 1.15s;
 	}
+	/* prettier-ignore */
 	@keyframes loading-bar__train {
-		0% {
-			left: -35%;
-			right: 100%;
-		}
-		60% {
-			left: 100%;
-			right: -90%;
-		}
-		100% {
-			left: 100%;
-			right: -90%;
-		}
+		0%   { left: -35%; right: 100%; }
+		60%  { left: 100%; right: -90%; }
+		100% { left: 100%; right: -90%; }
 	}
+	/* prettier-ignore */
 	@keyframes loading-bar__train-short {
-		0% {
-			left: -200%;
-			right: 100%;
-		}
-		60% {
-			left: 107%;
-			right: -8%;
-		}
-		100% {
-			left: 107%;
-			right: -8%;
-		}
+		0%   { left: -200%; right: 100%; }
+		60%  { left: 107%;  right: -8%;  }
+		100% { left: 107%;  right: -8%;  }
 	}
 </style>

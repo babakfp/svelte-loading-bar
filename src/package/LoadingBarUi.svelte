@@ -23,12 +23,6 @@
 			rgb(255 255 255 / 40%)
 		);
 	}
-	.loadingbar-train {
-		background-color: var(
-			--loadingbar-train-background-color,
-			rgb(255 255 255)
-		);
-	}
 	.loadingbar-train::before,
 	.loadingbar-train::after {
 		content: "";

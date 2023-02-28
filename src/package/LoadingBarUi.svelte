@@ -32,7 +32,10 @@
 		left: 0;
 		bottom: 0;
 		will-change: left, right;
-		@apply bg-white bg-opacity-80;
+		background-color: var(
+			--loading-bar-background-color,
+			rgb(255 255 255 / 80%)
+		);
 	}
 	.loading-bar__train::before {
 		animation: loading-bar__train 2100ms

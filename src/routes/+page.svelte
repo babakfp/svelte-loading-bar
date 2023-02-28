@@ -1,31 +1,42 @@
 <script>
-	import { LoadingBarUi } from "svelte-loadingbar"
+	import { LoadingBarUi } from "svelte-loading-bar"
 </script>
 
-<h1>LoadingBar Styles</h1>
+<h1 class="text-xl font-bold text-white">Loading Bar Styles</h1>
 
-<ul class="mt-8 grid gap-8">
-	<li class="relative">
-		<LoadingBarUi />
+<ul class="mt-8 grid gap-8 text-xs">
+	<li class="grid gap-2">
+		<span>
+			Default (customize the colors if you are using a white background):
+		</span>
+		<div class="relative">
+			<LoadingBarUi />
+		</div>
 	</li>
-	<li class="relative">
-		<LoadingBarUi classLoadingBar="second" />
+	<li class="grid gap-2">
+		<span>Customized both bar and train color:</span>
+		<div class="relative">
+			<LoadingBarUi classLoadingBar="second" />
+		</div>
 	</li>
-	<li class="relative">
-		<LoadingBarUi classLoadingBar="third" />
+	<li class="grid gap-2">
+		<span>Transparent bar:</span>
+		<div class="relative">
+			<LoadingBarUi classLoadingBar="third" />
+		</div>
 	</li>
 </ul>
 
 <style lang="postcss">
 	:global(.second) {
-		--loadingbar-background-color: theme(colors.orange.400/40%);
-		--loadingbar-train-background-color: theme(colors.orange.400/80%);
+		--loading-bar-background-color: theme(colors.orange.400/40%);
+		--loading-bar-train-background-color: theme(colors.orange.400/80%);
 	}
 	:global(.third) {
-		--loadingbar-background-color: theme(colors.transparent);
-		--loadingbar-train-background-color: theme(colors.orange.400/80%);
+		--loading-bar-background-color: theme(colors.transparent);
+		--loading-bar-train-background-color: theme(colors.orange.400/80%);
 	}
-	:global(.loadingbar) {
+	:global(.loading-bar) {
 		@apply !absolute;
 	}
 </style>

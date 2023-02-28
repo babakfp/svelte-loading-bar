@@ -3,12 +3,12 @@
 	export let classLoadingBarTrain: string | null | undefined = null
 </script>
 
-<div class="loadingbar {classLoadingBar || ''}">
-	<div class="loadingbar-train {classLoadingBarTrain || ''}" />
+<div class="loading-bar {classLoadingBar || ''}">
+	<div class="loading-bar-train {classLoadingBarTrain || ''}" />
 </div>
 
 <style lang="postcss">
-	.loadingbar {
+	.loading-bar {
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -19,13 +19,13 @@
 		overflow: hidden;
 		z-index: 999;
 		/* prettier-ignore */
-		background-color: var(--loadingbar-background-color, rgb(255 255 255 / 40%));
+		background-color: var(--loading-bar-background-color, rgb(255 255 255 / 40%));
 	}
-	.loadingbar-train {
+	.loading-bar-train {
 		height: 100%;
 	}
-	.loadingbar-train::before,
-	.loadingbar-train::after {
+	.loading-bar-train::before,
+	.loading-bar-train::after {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -33,25 +33,25 @@
 		bottom: 0;
 		will-change: left, right;
 		/* prettier-ignore */
-		background-color: var(--loadingbar-train-background-color, rgb(255 255 255 / 80%));
+		background-color: var(--loading-bar-train-background-color, rgb(255 255 255 / 80%));
 	}
-	.loadingbar-train::before {
-		animation: loadingbar-train-animation 2100ms
+	.loading-bar-train::before {
+		animation: loading-bar-train-animation 2100ms
 			cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 	}
-	.loadingbar-train::after {
-		animation: loadingbar-train-short-animation 2100ms
+	.loading-bar-train::after {
+		animation: loading-bar-train-short-animation 2100ms
 			cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 		animation-delay: 1.15s;
 	}
 	/* prettier-ignore */
-	@keyframes loadingbar-train-animation {
+	@keyframes loading-bar-train-animation {
 		0%   { left: -35%; right: 100%; }
 		60%  { left: 100%; right: -90%; }
 		100% { left: 100%; right: -90%; }
 	}
 	/* prettier-ignore */
-	@keyframes loadingbar-train-short-animation {
+	@keyframes loading-bar-train-short-animation {
 		0%   { left: -200%; right: 100%; }
 		60%  { left: 107%;  right: -8%;  }
 		100% { left: 107%;  right: -8%;  }

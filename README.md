@@ -1,6 +1,8 @@
+# Svelte Loading Bar
+
 A Svelte component for showing a loading bar.
 
-- Visit [NPM](https://www.npmjs.com/package/svelte-loadingbar)
+- Visit [NPM](https://www.npmjs.com/package/svelte-loading-bar)
 
 ## Documentation
 
@@ -9,18 +11,18 @@ A Svelte component for showing a loading bar.
 Use this component if you are using SvelteKit:
 
 ```js
-import { LoadingBarUi } from 'svelte-loadingbar'
+import { LoadingBarUi } from 'svelte-loading-bar'
 ```
 
 Use this component if you want to use it inside Svelte. Use need to do the logic yourself:
 
 ```js
-import { LoadingBarUi } from 'svelte-loadingbar'
+import { LoadingBarUi } from 'svelte-loading-bar'
 ```
 
 ## How to change the color
 
 ```
---loadingbar-background-color
---loadingbar-train-background-color
+--loading-bar-background-color
+--loading-bar-train-background-color
 ```

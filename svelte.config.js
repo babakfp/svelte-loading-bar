@@ -7,7 +7,7 @@ export default {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			"svelte-loadingbar": "src/package/index.ts",
+			"svelte-loading-bar": "src/package/index.ts",
 		},
 	},
 }

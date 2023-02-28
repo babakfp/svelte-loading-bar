@@ -18,10 +18,8 @@
 		background-clip: padding-box;
 		overflow: hidden;
 		z-index: 999;
-		background-color: var(
-			--loadingbar-background-color,
-			rgb(255 255 255 / 40%)
-		);
+		/* prettier-ignore */
+		background-color: var(--loadingbar-background-color, rgb(255 255 255 / 40%));
 	}
 	.loadingbar-train::before,
 	.loadingbar-train::after {
@@ -31,10 +29,8 @@
 		left: 0;
 		bottom: 0;
 		will-change: left, right;
-		background-color: var(
-			--loadingbar-train-background-color,
-			rgb(255 255 255 / 80%)
-		);
+		/* prettier-ignore */
+		background-color: var(--loadingbar-train-background-color, rgb(255 255 255 / 80%));
 	}
 	.loadingbar-train::before {
 		animation: loadingbar-train-animation 2100ms

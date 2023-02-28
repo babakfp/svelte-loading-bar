@@ -38,7 +38,7 @@
 		bottom: 0;
 		will-change: left, right;
 		background-color: var(
-			--loadingbar-background-color,
+			--loadingbar-train-background-color,
 			rgb(255 255 255 / 80%)
 		);
 	}

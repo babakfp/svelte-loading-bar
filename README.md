@@ -39,6 +39,8 @@ If you are using **Svelte** (you need to do the logic yourself):
 --loading-bar-train-background-color: rgb(0 100 220 / 90%)
 ```
 
+You can use the css variables like this:
+
 ```svelte
 <LoadingBarUi
 	--loading-bar-background-color="rgb(0 100 160 / 80%)"
@@ -46,7 +48,7 @@ If you are using **Svelte** (you need to do the logic yourself):
 />
 ```
 
-Or:
+Or like this:
 
 ```svelte
 <LoadingBarUi classLoadingBar="my-loading-bar" />

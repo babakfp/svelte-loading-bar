@@ -12,19 +12,25 @@ pnpm add -D svelte-outclick
 
 ## Use it
 
-If you are using **SvelteKit**, use this component:
+If you are using **SvelteKit**, use this inside your `+layout.svelte`:
 
-```js
-import { LoadingBar } from 'svelte-loading-bar'
+```svelte
+<script>
+	import { LoadingBar } from 'svelte-loading-bar'
+</script>
+
+<LoadingBar />
 ```
 
-If you are using **Svelte**, use this component:
+If you are using **Svelte** (you need to do the logic yourself):
 
-```js
-import { LoadingBarUi } from 'svelte-loading-bar'
+```svelte
+<script>
+	import { LoadingBarUi } from 'svelte-loading-bar'
+</script>
+
+<LoadingBarUi />
 ```
-
-Use need to do the logic yourself.
 
 ## Customization
 

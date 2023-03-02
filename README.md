@@ -4,23 +4,29 @@ A Svelte component for showing a loading bar.
 
 - Visit [NPM](https://www.npmjs.com/package/svelte-loading-bar)
 
-## Documentation
+## Install
 
-## How to import and use
+```cmd
+pnpm add -D svelte-outclick
+```
 
-Use this component if you are using SvelteKit:
+## Use it
+
+If you are using **SvelteKit**, use this component:
+
+```js
+import { LoadingBar } from 'svelte-loading-bar'
+```
+
+If you are using **Svelte**, use this component:
 
 ```js
 import { LoadingBarUi } from 'svelte-loading-bar'
 ```
 
-Use this component if you want to use it inside Svelte. Use need to do the logic yourself:
+Use need to do the logic yourself.
 
-```js
-import { LoadingBarUi } from 'svelte-loading-bar'
-```
-
-## How to change the color
+## Customization
 
 ```
 --loading-bar-background-color

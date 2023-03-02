@@ -34,7 +34,27 @@ If you are using **Svelte** (you need to do the logic yourself):
 
 ## Customization
 
+```css
+--loading-bar-background-color: rgb(0 100 160 / 80%)
+--loading-bar-train-background-color: rgb(0 100 220 / 90%)
 ```
---loading-bar-background-color
---loading-bar-train-background-color
+
+```svelte
+<LoadingBarUi
+	--loading-bar-background-color="rgb(0 100 160 / 80%)"
+	--loading-bar-train-background-color="rgb(0 100 220 / 90%)"
+/>
+```
+
+Or:
+
+```svelte
+<LoadingBarUi classLoadingBar="my-loading-bar" />
+
+<style>
+	:global(.my-loading-bar) {
+		--loading-bar-background-color: rgb(0 100 160 / 80%);
+		--loading-bar-train-background-color: rgb(0 100 220 / 90%);
+	}
+</style>
 ```

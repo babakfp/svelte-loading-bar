@@ -13,7 +13,7 @@
 		top: 0;
 		right: 0;
 		left: 0;
-		height: 3px;
+		height: 2px;
 		width: 100%;
 		background-clip: padding-box;
 		overflow: hidden;

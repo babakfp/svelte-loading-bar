@@ -36,12 +36,12 @@
 		background-color: var(--loading-bar-train-background-color, rgb(255 255 255 / 80%));
 	}
 	.loading-bar-train::before {
-		animation: loading-bar-train-animation 2100ms
-			cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+		/* prettier-ignore */
+		animation: loading-bar-train-animation 2100ms cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 	}
 	.loading-bar-train::after {
-		animation: loading-bar-train-short-animation 2100ms
-			cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+		/* prettier-ignore */
+		animation: loading-bar-train-short-animation 2100ms cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 		animation-delay: 1.15s;
 	}
 	/* prettier-ignore */

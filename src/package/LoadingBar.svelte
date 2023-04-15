@@ -2,8 +2,8 @@
 	import { navigating } from "$app/stores"
 	import LoadingBarUi from "./LoadingBarUi.svelte"
 
-	export let classLoadingBar: string | null | undefined = null
-	export let classLoadingBarTrain: string | null | undefined = null
+	export let classLoadingBar = ""
+	export let classLoadingBarTrain = ""
 	export let delay = 250
 
 	let delayedPreloading = false

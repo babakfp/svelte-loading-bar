@@ -16,7 +16,7 @@ If you are using **SvelteKit**, use this inside your `+layout.svelte`:
 
 ```svelte
 <script>
-	import { LoadingBar } from 'svelte-loading-bar'
+	import { LoadingBar } from "svelte-loading-bar"
 </script>
 
 <LoadingBar />
@@ -26,7 +26,7 @@ If you are using **Svelte** (you need to do the logic yourself):
 
 ```svelte
 <script>
-	import { LoadingBarUi } from 'svelte-loading-bar'
+	import { LoadingBarUi } from "svelte-loading-bar"
 </script>
 
 <LoadingBarUi />
@@ -60,3 +60,7 @@ Or like this:
 	}
 </style>
 ```
+
+---
+
+[Source code](/src/routes/%2Bpage.svelte) of the demo examples.

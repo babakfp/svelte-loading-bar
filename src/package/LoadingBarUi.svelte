@@ -1,10 +1,10 @@
 <script lang="ts">
-	export let classLoadingBar: string | null | undefined = null
-	export let classLoadingBarTrain: string | null | undefined = null
+	export let classLoadingBar = ""
+	export let classLoadingBarTrain = ""
 </script>
 
-<div class="loading-bar {classLoadingBar || ''}">
-	<div class="loading-bar-train {classLoadingBarTrain || ''}" />
+<div class="loading-bar {classLoadingBar}">
+	<div class="loading-bar-train {classLoadingBarTrain}" />
 </div>
 
 <style lang="postcss">

@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 0.0.5
+
+- Fixed typo in docs.
+
 ## 0.0.4
 
 - Changed the type of `classLoadingBar` prop from `string | null | undefined` to `string`.

@@ -1,7 +1,7 @@
 {
 	"name": "svelte-loading-bar",
 	"description": "A Svelte component for showing a loading bar.",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"license": "MIT",
 	"repository": "github:babakfp/svelte-loading-bar",
 	"scripts": {

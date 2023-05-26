@@ -7,7 +7,7 @@ A Svelte component for showing a loading bar.
 ## Install
 
 ```cmd
-pnpm add -D svelte-outclick
+pnpm add -D svelte-loading-bar
 ```
 
 ## Use it

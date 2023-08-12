@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 0.0.6
+
+- Now it's compatible with Svelte 4.
+
 ### 0.0.5
 
 - Fixed typo in docs.

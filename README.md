@@ -4,6 +4,8 @@ A Svelte component for showing a loading bar.
 
 [![NPM](https://img.shields.io/npm/v/svelte-loading-bar?style=for-the-badge&label=NPM&color=%23cb0000)](https://www.npmjs.com/package/svelte-loading-bar)
 
+- [Demo](https://svelte-loading-bar.vercel.app)
+
 ## Install
 
 ```cmd

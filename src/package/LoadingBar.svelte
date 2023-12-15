@@ -1,15 +1,15 @@
 <script lang="ts">
-	import { navigating } from "$app/stores"
-	import LoadingBarUi from "./LoadingBarUi.svelte"
+    import { navigating } from "$app/stores"
+    import LoadingBarUi from "./LoadingBarUi.svelte"
 
-	export let delay = 250
-	export let classLoadingBar = ""
-	export let classLoadingBarTrain = ""
+    export let delay = 250
+    export let classLoadingBar = ""
+    export let classLoadingBarTrain = ""
 
-	let delayedPreloading = false
-	$: setTimeout(() => (delayedPreloading = !!$navigating), delay)
+    let delayedPreloading = false
+    $: setTimeout(() => (delayedPreloading = !!$navigating), delay)
 </script>
 
 {#if delayedPreloading}
-	<LoadingBarUi {classLoadingBar} {classLoadingBarTrain} />
+    <LoadingBarUi {classLoadingBar} {classLoadingBarTrain} />
 {/if}

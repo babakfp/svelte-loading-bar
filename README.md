@@ -2,7 +2,7 @@
 
 A Svelte component for showing a loading bar.
 
--   Visit [NPM](https://www.npmjs.com/package/svelte-loading-bar)
+[![NPM](https://img.shields.io/npm/v/svelte-loading-bar?style=for-the-badge&label=NPM&color=%23cb0000)](https://www.npmjs.com/package/svelte-loading-bar)
 
 ## Install
 

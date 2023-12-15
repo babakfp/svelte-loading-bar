@@ -25,7 +25,13 @@
         "dist"
     ],
     "peerDependencies": {
-        "svelte": "3.x || 4.x"
+        "svelte": "3.x || 4.x",
+        "@sveltejs/kit": "1.x || 2.x"
+    },
+    "peerDependenciesMeta": {
+        "@sveltejs/kit": {
+            "optional": true
+        }
     },
     "devDependencies": {
         "@sveltejs/adapter-vercel": "4.0.1",

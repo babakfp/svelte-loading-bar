@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+## 1.0.1
+
+-   Added `@sveltejs/kit` to `peerDependenciesMeta` as optional.
+
 ## 1.0.0
 
 -   Now is compatible with the latest release of SvelteKit `2.0.0`.

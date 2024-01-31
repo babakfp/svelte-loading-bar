@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+## 1.1.0
+
+-   Avoid shared state on the server.
+    ```
+    Error: Cannot subscribe to 'navigating' store on the server outside of a Svelte component, as it is bound to the current request via component context. This prevents state from leaking between users.For more information, see https://kit.svelte.dev/docs/state-management#avoid-shared-state-on-the-server
+    ```
+
 ## 1.0.1
 
 -   Added `@sveltejs/kit` to `peerDependenciesMeta` as optional.

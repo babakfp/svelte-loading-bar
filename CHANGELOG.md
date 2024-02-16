@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+## 1.2.0
+
+-   Using `clearTimeout` to clear the timeout on `onDestroy`.
+-   Using `.subscribe` syntax to subscribe to the store.
+-   Using `onMount` instead of `if (browser)`.
+
 ## 1.1.0
 
 -   Avoid shared state on the server.

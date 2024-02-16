@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { browser } from "$app/environment"
+    import { onDestroy, onMount } from "svelte"
     import { navigating } from "$app/stores"
     import LoadingBarUi from "./LoadingBarUi.svelte"
 
@@ -7,10 +7,21 @@
     export let classLoadingBar = ""
     export let classLoadingBarTrain = ""
 
+    let timeoutId: number | undefined
     let delayedPreloading = false
-    $: if (browser) {
-        setTimeout(() => (delayedPreloading = !!$navigating), delay)
-    }
+
+    onMount(() => {
+        navigating.subscribe(navigatingValue => {
+            clearTimeout(timeoutId)
+            timeoutId = setTimeout(() => {
+                delayedPreloading = !!navigatingValue
+            }, delay)
+        })
+    })
+
+    onDestroy(() => {
+        clearTimeout(timeoutId)
+    })
 </script>
 
 {#if delayedPreloading}

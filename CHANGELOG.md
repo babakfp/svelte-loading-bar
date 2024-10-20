@@ -1,5 +1,13 @@
 ## CHANGELOG
 
+## 2.0.0
+
+-   Upgraded to Svelte v5.
+
+## 1.3.0
+
+Don't install this version. Use `1.2.0` instead.
+
 ## 1.2.0
 
 -   Using `clearTimeout` to clear the timeout on `onDestroy`.

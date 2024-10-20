@@ -1,10 +1,14 @@
 <script lang="ts">
-    export let classLoadingBar = ""
-    export let classLoadingBarTrain = ""
+    type Props = {
+        classLoadingBar?: string
+        classLoadingBarTrain?: string
+    }
+
+    let { classLoadingBar, classLoadingBarTrain }: Props = $props()
 </script>
 
 <div class="loading-bar {classLoadingBar}">
-    <div class="loading-bar-train {classLoadingBarTrain}" />
+    <div class="loading-bar-train {classLoadingBarTrain}"></div>
 </div>
 
 <style lang="postcss">

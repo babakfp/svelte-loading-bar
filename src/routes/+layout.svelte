@@ -1,9 +1,16 @@
-<script>
+<script lang="ts">
+    import type { Snippet } from "svelte"
     import "../app.postcss"
+
+    type Props = {
+        children: Snippet
+    }
+
+    let { children }: Props = $props()
 </script>
 
 <main class="min-h-screen p-8">
-    <slot />
+    {@render children()}
 </main>
 
 <div class="self-end border-t border-gray-800 py-4 text-center">

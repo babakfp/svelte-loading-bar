@@ -3,13 +3,15 @@
     import { navigating } from "$app/stores"
     import LoadingBarUi from "./LoadingBarUi.svelte"
 
-    type Props = {
+    let {
+        delay = 250,
+        classLoadingBar,
+        classLoadingBarTrain,
+    }: {
         delay?: number
         classLoadingBar?: string
         classLoadingBarTrain?: string
-    }
-
-    let { delay = 250, classLoadingBar, classLoadingBarTrain }: Props = $props()
+    } = $props()
 
     let timeoutId: number | undefined
     let delayedPreloading = $state(false)

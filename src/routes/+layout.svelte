@@ -2,11 +2,11 @@
     import type { Snippet } from "svelte"
     import "../app.postcss"
 
-    type Props = {
+    let {
+        children,
+    }: {
         children: Snippet
-    }
-
-    let { children }: Props = $props()
+    } = $props()
 </script>
 
 <main class="min-h-screen p-8">

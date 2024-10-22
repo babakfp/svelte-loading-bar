@@ -1,10 +1,11 @@
 <script lang="ts">
-    type Props = {
+    let {
+        classLoadingBar,
+        classLoadingBarTrain,
+    }: {
         classLoadingBar?: string
         classLoadingBarTrain?: string
-    }
-
-    let { classLoadingBar, classLoadingBarTrain }: Props = $props()
+    } = $props()
 </script>
 
 <div class="loading-bar {classLoadingBar}">

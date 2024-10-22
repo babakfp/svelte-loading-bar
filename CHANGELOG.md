@@ -1,6 +1,12 @@
 ## CHANGELOG
 
+## 2.0.2
+
+-   Fixed `lang="ts"`.
+
 ## 2.0.0
+
+Don't use this version. Use `2.0.2` instead.
 
 -   Upgraded to Svelte v5.
 

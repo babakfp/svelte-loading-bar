@@ -4,7 +4,13 @@ A Svelte component for showing a loading bar.
 
 [![NPM](https://img.shields.io/npm/v/svelte-loading-bar?style=for-the-badge&label=NPM&color=%23cb0000)](https://www.npmjs.com/package/svelte-loading-bar)
 
-[Demo](https://svelte-loading-bar.vercel.app)
+-   [Demo](https://svelte-loading-bar.vercel.app)
+-   [CHANGELOG](https://github.com/babakfp/svelte-loading-bar/blob/main/CHANGELOG.md)
+-   [NPM](https://www.npmjs.com/package/svelte-loading-bar)
+-   [GitHub](https://github.com/babakfp/svelte-loading-bar)
+
+> [!IMPORTANT]
+> The latest version of this package is not compatible with Svelte 4. Please use the version `1.2.0` for Svelte 4 compatibility.
 
 ## Install
 
